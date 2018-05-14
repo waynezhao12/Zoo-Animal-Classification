@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 
 
-dataset = pd.read_csv('../input/zoo.csv', header=0)
+dataset = pd.read_csv('data/zoo.csv', header=0)
 dataset = pd.get_dummies(dataset, columns=['animal_name'])
 
 values = list(dataset.columns.values)
